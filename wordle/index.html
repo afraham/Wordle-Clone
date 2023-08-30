@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Wordle</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="header" id="header">
+      <h1 id="title">Wordle</h1>
+      <div class="buttons">
+        <button class="" id="darkmode">&#9681;</button>
+        <div class="divider"></div>
+        <button id="hint">&#63;</button>
+        <div class="divider"></div>
+        <button id="instructions">&#9432;</button>
+      </div>
+    </div>
+    <div class="hidden" id="congratsgif">
+      <img
+        src="https://media.tenor.com/L-3Bvz1Gy0cAAAAC/bh187-spongebob.gif"
+        alt="congratsgif"
+      />
+    </div>
+    <div class="gameboard">
+      <table id="gameboard-table">
+        <tr>
+          <td class="table-section"></td>
+          <td class="table-section"></td>
+          <td class="table-section"></td>
+          <td class="table-section"></td>
+        </tr>
+        <tr>
+          <td class="table-section"></td>
+          <td class="table-section"></td>
+          <td class="table-section"></td>
+          <td class="table-section"></td>
+        </tr>
+        <tr>
+          <td class="table-section"></td>
+          <td class="table-section"></td>
+          <td class="table-section"></td>
+          <td class="table-section"></td>
+        </tr>
+        <tr>
+          <td class="table-section"></td>
+          <td class="table-section"></td>
+          <td class="table-section"></td>
+          <td class="table-section"></td>
+        </tr>
+      </table>
+      <div class="hidden" id="instructbox">
+        <h2>How to Play:</h2>
+        <ul>
+          <li>Start typing, the letters will appear in the boxes</li>
+          <li>Remove letters with a <i>Backspace</i></li>
+          <li>Hit <i>Enter/Return</i> to submit an answer</li>
+        </ul>
+        <ul>
+          <li>Letters with a <i>Green</i> background are in the right spot!</li>
+          <li>
+            Letters with a <i>Yellow</i> background exist in the word, but are
+            in the wrong spot(s)
+          </li>
+          <li>Letters with a <i>Gray</i> background don't exist in the word</li>
+        </ul>
+        <i>If a hint is needed, press the &#63; icon</i> <br />
+        <i>For dark mode, press the &#9681; icon</i>
+      </div>
+    </div>
+    <div class="start-over">
+      <button id="startover" onclick="resetGame()"></button>
+    </div>
+    <br />
+    <div id="feedback"></div>
+    <div class="hidden" id="hiddenhint"></div>
+    <div class="hidden" id="failmessage"></div>
+    <div class="hidden" id="congratsmessage">
+      <p class="congrats"></p>
+    </div>
+    <br />
+    <div class="center">&#169; AAM</div>
+    <script src="./wordle.js"></script>
+  </body>
+</html>
