@@ -1,0 +1,184 @@
+body {
+  margin: 0;
+  font-family: "Franklin Gothic", "Arial Narrow", Arial, sans-serif;
+}
+
+/* HIDING ELEMENTS */
+.hidden {
+  display: none;
+}
+
+/* DARK MODE TOGGLES */
+.dark-body {
+  background-color: rgb(56, 56, 56);
+  color: rgb(225, 225, 225);
+}
+
+.dark-button {
+  color: rgb(225, 225, 225);
+}
+
+/* HEADER */
+/* flex box for the header */
+.header {
+  text-align: center;
+  flex-direction: row;
+  display: flex;
+  border-bottom: 1px solid rgb(109, 109, 109);
+  border-top: 8px solid rgb(191, 224, 239);
+}
+
+/* title format */
+h1#title {
+  display: block;
+  margin: auto;
+  padding: 20px;
+  font-size: 240%;
+}
+
+/* button formats */
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: xx-large;
+}
+
+button:hover {
+  color: rgb(109, 109, 109);
+}
+
+.buttons {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 30px;
+}
+
+/* TABLE */
+/* flex box for the gameboard + instructions */
+div.gameboard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+div#instructbox {
+  border-left: 1px solid rgb(109, 109, 109);
+  padding: 30px;
+  padding-left: 30px;
+}
+
+table {
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+  flex-direction: row;
+  padding: 45px;
+}
+
+td {
+  border: 1px solid rgb(109, 109, 109);
+  width: 80px;
+  height: 80px;
+  text-align: center;
+  font-size: 2.3em;
+}
+
+/* START-OVER BUTTON */
+/* button formatting */
+button#startover {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(139, 195, 220);
+  padding: 10px;
+  color: rgb(255, 255, 255);
+  border-radius: 10px;
+  padding-right: 30px;
+  padding-left: 30px;
+  font-size: 20px;
+  font-weight: bold;
+  margin: auto;
+}
+
+button#startover:hover {
+  background-color: rgb(95, 147, 171);
+}
+
+/* HINT STUFF */
+div#hiddenhint {
+  background-color: rgb(213, 213, 213);
+  padding: 15px;
+  text-align: center;
+  color: rgb(58, 58, 58);
+}
+
+#hiddenhint:before {
+  content: "Hint: ";
+  font-style: italic;
+}
+
+/* FAILURE MESSAGE */
+/* failure message formatting */
+div#failmessage {
+  background-color: rgb(195, 49, 49);
+  padding: 15px;
+  color: rgb(240, 240, 240);
+  text-align: center;
+  font-weight: bold;
+}
+
+#failmessage:before {
+  content: "Oh no! The word was ";
+  font-weight: normal;
+}
+
+#failmessage:after {
+  content: ". You've failed :(";
+  font-weight: normal;
+}
+
+/* CONGRATS MESSAGE */
+/* winning message formatting */
+div#congratsmessage {
+  background-color: rgb(186, 238, 180);
+  padding: 15px;
+  color: rgb(47, 47, 47);
+  text-align: center;
+  font-weight: bold;
+}
+
+#congratsmessage:before {
+  content: "Hooray! You guessed the word  ";
+  font-weight: normal;
+}
+#congratsmessage:after {
+  content: " correctly! :D";
+  font-weight: normal;
+}
+
+/* image formatting */
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+  padding: 30px;
+}
+
+/* EXTRA */
+/* copyright thing :) */
+.center {
+  display: flex;
+  justify-content: center;
+  border-top: 1px solid rgb(109, 109, 109);
+  padding-top: 10px;
+  color: rgb(109, 109, 109);
+}
+
+/* divider */
+div.divider {
+  width: 30px;
+  height: auto;
+  display: inline-block;
+}
