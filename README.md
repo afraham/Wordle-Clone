@@ -13,7 +13,7 @@ To run this project locally, here are the steps:
 2. Navigate to the project's directory: `cd wordle`
 3. Open `index.html` in your preferred web browser
 
-_Note: You'll need an active internet conect in order to fetch the words from the external dictionary API!_
+_Note: You'll need an active internet connection in order to fetch the words from the external dictionary API!_
 
 ## Credits 🙌
 A one-man job all by **Afrah Mohammad** ([afraham](https://github.com/afraham) on GitHub) 😉
